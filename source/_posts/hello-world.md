@@ -1,38 +1,16 @@
 ---
-title: Hello World
+title: The habit of writing up thoughts
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+# Hello World! 👐🌏
 
-### Create a new post
+This is my first article. Learning a language is of no use unless it gives you a better perspective of life. And by language I mean both human and programmatically.
 
-``` bash
-$ hexo new "My New Post"
-```
+With that crap out of the way, I will make it a habit to write down all my experiences into this blog for the rest of my career.
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+I do this for the following reasons.
+- As a developer, rapid technological changes is an occupational hazard. 
+- It might help someone to improve their career (I hope).
+- Encourage people to do the same and be a part of the modern literature of programming
+- Open people up for a brighter and greater future.
 
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/deployment.html)
