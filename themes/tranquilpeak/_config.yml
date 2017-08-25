@@ -35,33 +35,15 @@ sidebar:
             title: global.home
             url: /
             icon: home
-        categories:
-            title: global.categories
-            url: /all-categories
-            icon: bookmark
-        tags:
-            title: global.tags
-            url: /all-tags
-            icon: tags
-        archives:
-            title: global.archives
-            url: /all-archives
-            icon: archive
-        search:
-            title: global.search
-            url: /#search
-            icon: search
-            # `open-algolia-search` classes are used to open algolia search modal
-            class: open-algolia-search
         about:
             title: global.about
             url: /#about
             icon: question
     author_links:
-        # github:
-        #     title: global.github
-        #     url: https://github.com/
-        #     icon: github
+        github:
+            title: global.github
+            url: https://github.com/essuraj
+            icon: github
         # stack_overflow:
         #     title: global.stack_overflow
         #     url: http://stackoverflow.com/users
@@ -86,11 +68,11 @@ sidebar:
         #     title: global.mail
         #     url: mailto:
         #     icon: envelope-o
-    rss:
-        rss:
-            title: global.rss
-            url: /atom.xml
-            icon: rss
+    # rss:
+    #     rss:
+    #         title: global.rss
+    #         url: /atom.xml
+    #         icon: rss
 
 
 # Header configuration
@@ -112,20 +94,11 @@ header:
 # Author
 # Your biography and your job is editable in each languages files in `languages` folder
 author:
-    email:
-    location:
-    # Your profile picture located in folder `source/_images/` (development)
-    # or in `source/assets/images/` (production)
-    # or you can use an external url
-    # Overwritten by your gravatar image if `gravatar_email` is filled
-    picture:
-    # Your Twitter username without the @. E.g : `tranquilpeak`
-    twitter:
-    # Your personal google plus profile id, not your blog or business page id.
-    # E.g : `+JohnDoe` or `123812884128439`
+    email: essuraj@live.in
+    location: Hyderabad, India
+    picture: me.jpg
+    twitter: essuraj
     google_plus:
-    # Your businnes google plus profile id. If not provided, personal will be used instead.
-    # E.g : `+Tranquilpeak` or `123812884128439`
     google_plus_business:
 
 
@@ -179,7 +152,7 @@ tag_pagination: true
 # You can't use Disqus and Duoshuo together
 # then fill the right shortname
 # Your Disqus shortname
-disqus_shortname:
+disqus_shortname: essuraj-github-io
 # Your Duoshuo shortname
 duoshuo_shortname:
 # Your Google analystics web property ID : UA-XXXXX-X
@@ -208,29 +181,4 @@ sharing_options:
     google_plus:
         icon: "fa-google-plus"
         url: "https://plus.google.com/share?url={{post.permalink}}"
-    # Asian social networks
-    # weibo:
-    #     title: "Weibo"
-    #     icon: "fa-weibo"
-    #     url: "http://service.weibo.com/share/share.php?&title={{post.permalink}}"
-    # qq:
-    #     title: "QQ"
-    #     icon: "fa-qq"
-    #     url: "http://connect.qq.com/widget/shareqq/index.html?url={{post.permalink}}&title={{post.title}}"
-    # qzone:
-    #     title: "Qzone"
-    #     icon: "fa-star"
-    #     url: "http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={{post.permalink}}"
-    # renren:
-    #     title: "Renren"
-    #     icon: "fa-renren"
-    #     url: "http://widget.renren.com/dialog/share?resourceUrl={{post.permalink}}"
-    # Russian social networks
-    # vk:
-    #     title: "VK"
-    #     icon: "fa-vk"
-    #     url: "https://vk.com/share.php?url={{post.permalink}}"
-    # odnoklassniki:
-    #     title: "Odnoklassniki"
-    #     icon: "fa-odnoklassniki"
-    #     url: "https://connect.ok.ru/offer?url={{post.permalink}}"
+

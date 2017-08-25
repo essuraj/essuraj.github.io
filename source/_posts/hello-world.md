@@ -2,9 +2,7 @@
 title: The habit of writing up thoughts
 ---
 
-# Hello World! 👐🌏
-
-This is my first article. Learning a language is of no use unless it gives you a better perspective of life. And by language I mean both human and programmatically.
+This is my "Hello World ! 👐🌏". Learning a language is of no use unless it gives you a better perspective of life. And by language I mean both human and programmatically.
 
 With that crap out of the way, I will make it a habit to write down all my experiences into this blog for the rest of my career.
 
