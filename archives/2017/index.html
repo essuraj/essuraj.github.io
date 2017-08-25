@@ -114,6 +114,19 @@
             
         </ul>
         
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a  class="sidebar-button-link " href="https://github.com/essuraj" target="_blank" rel="noopener">
+                    
+                        <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+                        <span class="sidebar-button-desc">GitHub</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
     </div>
 </nav>
 
@@ -124,6 +137,67 @@
                         ">
                 
     <section class="postShorten-group main-content-wrap">
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
+                        <a class="link-unstyled" href="/2017/08/24/building-a-bot/">
+                            Building a bot using API.ai
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time itemprop="datePublished" datetime="2017-08-24T20:50:02+05:30">
+	
+		    Aug 24, 2017
+    	
+    </time>
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content" itemprop="articleBody">
+                    <p>Recently I found myself wandering into the concept of bots and conversational programming if I may call it so, I stumbled upon <a href="https://api.ai" target="_blank" rel="external">API.AI</a>, a website promoted by google to create conversational user experience for a much natural approach to app interactions.</p>
+<p>It seemed quite simple to understand at first and then all the stuff gets confusing. But eventually it slowly sunk in. Let me give you a quick bite on how to begin make a bot in api.ai.</p>
+<p>Begin by signing in with your google account. After this you will begin by creating a new Agent.</p>
+<div class="figure center fig-100" style="width:;"><a class="fancybox" href="1.JPG" title="Creating a new agent wizard" data-fancybox-group="travel"><img class="fig-img" src="1.JPG" alt="Creating a new agent wizard"></a><span class="caption">Creating a new agent wizard</span></div>
+<p>Google does provide you with some sample data that will be populated into your agent if you want to understand its potential, but we will begin with a clean slate. I do encourage you to check those sample data out to get a better understanding of how stuff were meant to be used.</p>
+<p>An agent has 3 major components. </p>
+<ul>
+<li>Intents</li>
+<li>Entities</li>
+<li>Response </li>
+</ul>
+<div class="figure center fig-100" style="width:;"><a class="fancybox" href="api.ai.png" title="Creating a new agent wizard" data-fancybox-group="travel"><img class="fig-img" src="api.ai.png" alt="Creating a new agent wizard"></a><span class="caption">Creating a new agent wizard</span></div>
+<h3 id="Intents"><a href="#Intents" class="headerlink" title="Intents"></a>Intents</h3><p>There are the inputs what people usually ask the bot.<br><div class="figure center fig-100" style="width:;"><a class="fancybox" href="2.JPG" title="Intents are what the user says, the highlighted portions are the entities that were detected in the intent" data-fancybox-group="travel"><img class="fig-img" src="2.JPG" alt="Intents are what the user says, the highlighted portions are the entities that were detected in the intent"></a><span class="caption">Intents are what the user says, the highlighted portions are the entities that were detected in the intent</span></div></p>
+<h3 id="Entities"><a href="#Entities" class="headerlink" title="Entities"></a>Entities</h3><p>These are what people categorize data into. More like a variable in development terms.<br><div class="figure center fig-100" style="width:;"><a class="fancybox" href="3.JPG" title="Detected entities are shown here." data-fancybox-group="travel"><img class="fig-img" src="3.JPG" alt="Detected entities are shown here."></a><span class="caption">Detected entities are shown here.</span></div></p>
+<p>We can create our own entities from the entities page<br><div class="figure center fig-100" style="width:;"><a class="fancybox" href="3.1.JPG" title="3.1.JPG The entities section" data-fancybox-group="travel"><img class="fig-img" src="3.1.JPG" alt="3.1.JPG The entities section"></a><span class="caption">3.1.JPG The entities section</span></div></p>
+<p>Here we create an entity called options. It well have 2 possible results. Agree or disagree ..and a set of words that will mean either of those options. API.AI also gives you some inbuilt entities under the @sys namespace.<br><div class="figure center fig-100" style="width:;"><a class="fancybox" href="3.2.JPG" title="3.2.JPG Creating the entities section" data-fancybox-group="travel"><img class="fig-img" src="3.2.JPG" alt="3.2.JPG Creating the entities section"></a><span class="caption">3.2.JPG Creating the entities section</span></div></p>
+<p>You can add new ones. You can make entities compulsory. If so you can prompt the user until he/she supplies the information.<br><div class="figure center fig-100" style="width:;"><a class="fancybox" href="4.JPG" title="Questions that need to be prompted for the required entities" data-fancybox-group="travel"><img class="fig-img" src="4.JPG" alt="Questions that need to be prompted for the required entities"></a><span class="caption">Questions that need to be prompted for the required entities</span></div></p>
+<h3 id="Response"><a href="#Response" class="headerlink" title="Response"></a>Response</h3><p>The reply that is sent to the user after you have satisfied all that you needed to know from the user’s intent.<br><div class="figure center fig-100" style="width:;"><a class="fancybox" href="5.JPG" title="The reply that the bot gives after your requirements are met" data-fancybox-group="travel"><img class="fig-img" src="5.JPG" alt="The reply that the bot gives after your requirements are met"></a><span class="caption">The reply that the bot gives after your requirements are met</span></div></p>
+<h2 id="Testing-our-work"><a href="#Testing-our-work" class="headerlink" title="Testing our work"></a>Testing our work</h2><div class="figure center fig-100" style="width:;"><a class="fancybox" href="7.gif" title="Testing with the panel on the right" data-fancybox-group="travel"><img class="fig-img" src="7.gif" alt="Testing with the panel on the right"></a><span class="caption">Testing with the panel on the right</span></div>
+<p>Where do we go from here…<br>If you dial into the options, you’ll find a ton of integrations with api.ai that will save you a lot of time and engage with users in a great collection of platforms.<br><div class="figure center fig-100" style="width:;"><a class="fancybox" href="8.png" title="Integrations" data-fancybox-group="travel"><img class="fig-img" src="8.png" alt="Integrations"></a><span class="caption">Integrations</span></div></p>
+
+                    
+                        
+                    
+                    
+                        <p>
+                            <a href="/2017/08/24/building-a-bot/#post-footer" class="postShorten-excerpt_link link">
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+    </article>
     
     
     <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
@@ -149,7 +223,7 @@
             </div>
             
                 <div class="postShorten-content" itemprop="articleBody">
-                    <h1 id="Hello-World-👐🌏"><a href="#Hello-World-👐🌏" class="headerlink" title="Hello World! 👐🌏"></a>Hello World! 👐🌏</h1><p>This is my first article. Learning a language is of no use unless it gives you a better perspective of life. And by language I mean both human and programmatically.</p>
+                    <p>This is my “Hello World ! 👐🌏”. Learning a language is of no use unless it gives you a better perspective of life. And by language I mean both human and programmatically.</p>
 <p>With that crap out of the way, I will make it a habit to write down all my experiences into this blog for the rest of my career.</p>
 <p>I do this for the following reasons.</p>
 <ul>
@@ -228,7 +302,7 @@
             <div id="about-card-location">
                 <i class="fa fa-map-marker"></i>
                 <br/>
-                Hyderabad
+                Hyderabad, India
             </div>
         
     </div>
@@ -272,6 +346,25 @@
                     <hr>
                 </div>
                 
+                <div class="media">
+                    
+                    <div class="media-body">
+                        <a class="link-unstyled" href="http://essuraj.github.io/2017/08/24/building-a-bot/">
+                            <h3 class="media-heading">Building a bot using API.ai</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Aug 24, 2017
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
             </div>
         </div>
         <div class="modal-footer">
@@ -279,7 +372,7 @@
                 data-message-zero="no post found"
                 data-message-one="1 post found"
                 data-message-other="{n} posts found">
-                1 post found
+                2 posts found
             </p>
         </div>
     </div>
