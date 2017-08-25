@@ -1,5 +1,5 @@
 ---
-title: Building a bot using API.ai
+title: Building a bot using api.ai
 date: 2017-08-24 20:50:02
 tags: 
 - bot
