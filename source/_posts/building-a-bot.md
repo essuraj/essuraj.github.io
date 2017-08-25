@@ -11,7 +11,7 @@ tags:
 Recently I found myself wandering into the concept of bots and conversational programming if I may call it so, I stumbled upon [API.AI](https://api.ai), a website promoted by google to create conversational user experience for a much natural approach to app interactions.
 
 It seemed quite simple to understand at first and then all the stuff gets confusing. But eventually it slowly sunk in. Let me give you a quick bite on how to begin make a bot in api.ai.
-
+<!-- more -->
 Begin by signing in with your google account. After this you will begin by creating a new Agent.
 
 {% image fancybox center fig-100 group:travel 1.JPG 1.JPG "Creating a new agent wizard" %}
