@@ -1,5 +1,7 @@
 ---
 title: The habit of writing up thoughts
+date: 2017-08-22 10:36:53
+tags:
 ---
 
 This is my "Hello World ! 👐🌏". Learning a language is of no use unless it gives you a better perspective of life. And by language I mean both human and programmatically.
