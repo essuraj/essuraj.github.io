@@ -6,34 +6,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="An element of thought">
-    <title>Building a bot using api.ai - An element of thought</title>
+    <title>The JavaScript paradigm - An element of thought</title>
     <meta name="author" content="Suraj E.S.">
     
     
     
-    <meta name="description" content="Recently I found myself wandering into the concept of bots and conversational programming if I may call it so, I stumbled upon API.AI, a website promoted by google to create conversational user experi">
-<meta name="keywords" content="bot,api.ai,AI,machine-learning">
+    <meta name="description" content="In this age of evident progress, the need to follow the ceremony is fading away. As people start venturing into a realm where outcomes are more important than origins, we have been losing sight on wha">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="Building a bot using api.ai">
-<meta property="og:url" content="http://essuraj.github.io/2017/08/24/building-a-bot/index.html">
+<meta property="og:title" content="The JavaScript paradigm">
+<meta property="og:url" content="http://essuraj.github.io/2017/08/26/the-javascript-paradigm/index.html">
 <meta property="og:site_name" content="An element of thought">
-<meta property="og:description" content="Recently I found myself wandering into the concept of bots and conversational programming if I may call it so, I stumbled upon API.AI, a website promoted by google to create conversational user experi">
+<meta property="og:description" content="In this age of evident progress, the need to follow the ceremony is fading away. As people start venturing into a realm where outcomes are more important than origins, we have been losing sight on wha">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://essuraj.github.io/2017/08/24/building-a-bot/1.JPG">
-<meta property="og:image" content="http://essuraj.github.io/2017/08/24/building-a-bot/api.ai.png">
-<meta property="og:image" content="http://essuraj.github.io/2017/08/24/building-a-bot/2.JPG">
-<meta property="og:image" content="http://essuraj.github.io/2017/08/24/building-a-bot/3.JPG">
-<meta property="og:image" content="http://essuraj.github.io/2017/08/24/building-a-bot/3.1.JPG">
-<meta property="og:image" content="http://essuraj.github.io/2017/08/24/building-a-bot/3.2.JPG">
-<meta property="og:image" content="http://essuraj.github.io/2017/08/24/building-a-bot/4.JPG">
-<meta property="og:image" content="http://essuraj.github.io/2017/08/24/building-a-bot/5.JPG">
-<meta property="og:image" content="http://essuraj.github.io/2017/08/24/building-a-bot/7.gif">
-<meta property="og:image" content="http://essuraj.github.io/2017/08/24/building-a-bot/8.png">
-<meta property="og:updated_time" content="2017-08-26T05:06:12.269Z">
+<meta property="og:updated_time" content="2017-08-26T05:08:47.996Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Building a bot using api.ai">
-<meta name="twitter:description" content="Recently I found myself wandering into the concept of bots and conversational programming if I may call it so, I stumbled upon API.AI, a website promoted by google to create conversational user experi">
-<meta name="twitter:image" content="http://essuraj.github.io/2017/08/24/building-a-bot/1.JPG">
+<meta name="twitter:title" content="The JavaScript paradigm">
+<meta name="twitter:description" content="In this age of evident progress, the need to follow the ceremony is fading away. As people start venturing into a realm where outcomes are more important than origins, we have been losing sight on wha">
 <meta name="twitter:creator" content="@essuraj">
     
     
@@ -158,14 +146,14 @@
         <div class="post-header main-content-wrap text-left">
     
         <h1 class="post-title" itemprop="headline">
-            Building a bot using api.ai
+            The JavaScript paradigm
         </h1>
     
     
         <div class="post-meta">
-    <time itemprop="datePublished" datetime="2017-08-24T20:50:02+05:30">
+    <time itemprop="datePublished" datetime="2017-08-26T10:36:53+05:30">
 	
-		    Aug 24, 2017
+		    Aug 26, 2017
     	
     </time>
     
@@ -176,37 +164,19 @@
     
     <div class="post-content markdown" itemprop="articleBody">
         <div class="main-content-wrap">
-            <p>Recently I found myself wandering into the concept of bots and conversational programming if I may call it so, I stumbled upon <a href="https://api.ai" target="_blank" rel="external">API.AI</a>, a website promoted by google to create conversational user experience for a much natural approach to app interactions.</p>
-<p>It seemed quite simple to understand at first and then all the stuff gets confusing. But eventually it slowly sunk in. Let me give you a quick bite on how to begin make a bot in api.ai.<br><a id="more"></a><br>Begin by signing in with your google account. After this you will begin by creating a new Agent.</p>
-<div class="figure center fig-100" style="width:;"><a class="fancybox" href="1.JPG" title="Creating a new agent wizard" data-fancybox-group="travel"><img class="fig-img" src="1.JPG" alt="Creating a new agent wizard"></a><span class="caption">Creating a new agent wizard</span></div>
-<p>Google does provide you with some sample data that will be populated into your agent if you want to understand its potential, but we will begin with a clean slate. I do encourage you to check those sample data out to get a better understanding of how stuff were meant to be used.</p>
-<p>An agent has 3 major components. </p>
-<ul>
-<li>Intents</li>
-<li>Entities</li>
-<li>Response </li>
-</ul>
-<div class="figure center fig-100" style="width:;"><a class="fancybox" href="api.ai.png" title="Creating a new agent wizard" data-fancybox-group="travel"><img class="fig-img" src="api.ai.png" alt="Creating a new agent wizard"></a><span class="caption">Creating a new agent wizard</span></div>
-<h3 id="Intents"><a href="#Intents" class="headerlink" title="Intents"></a>Intents</h3><p>There are the inputs what people usually ask the bot.<br><div class="figure center fig-100" style="width:;"><a class="fancybox" href="2.JPG" title="Intents are what the user says, the highlighted portions are the entities that were detected in the intent" data-fancybox-group="travel"><img class="fig-img" src="2.JPG" alt="Intents are what the user says, the highlighted portions are the entities that were detected in the intent"></a><span class="caption">Intents are what the user says, the highlighted portions are the entities that were detected in the intent</span></div></p>
-<h3 id="Entities"><a href="#Entities" class="headerlink" title="Entities"></a>Entities</h3><p>These are what people categorize data into. More like a variable in development terms.<br><div class="figure center fig-100" style="width:;"><a class="fancybox" href="3.JPG" title="Detected entities are shown here." data-fancybox-group="travel"><img class="fig-img" src="3.JPG" alt="Detected entities are shown here."></a><span class="caption">Detected entities are shown here.</span></div></p>
-<p>We can create our own entities from the entities page<br><div class="figure center fig-100" style="width:;"><a class="fancybox" href="3.1.JPG" title="3.1.JPG The entities section" data-fancybox-group="travel"><img class="fig-img" src="3.1.JPG" alt="3.1.JPG The entities section"></a><span class="caption">3.1.JPG The entities section</span></div></p>
-<p>Here we create an entity called options. It well have 2 possible results. Agree or disagree ..and a set of words that will mean either of those options. API.AI also gives you some inbuilt entities under the @sys namespace.<br><div class="figure center fig-100" style="width:;"><a class="fancybox" href="3.2.JPG" title="3.2.JPG Creating the entities section" data-fancybox-group="travel"><img class="fig-img" src="3.2.JPG" alt="3.2.JPG Creating the entities section"></a><span class="caption">3.2.JPG Creating the entities section</span></div></p>
-<p>You can add new ones. You can make entities compulsory. If so you can prompt the user until he/she supplies the information.<br><div class="figure center fig-100" style="width:;"><a class="fancybox" href="4.JPG" title="Questions that need to be prompted for the required entities" data-fancybox-group="travel"><img class="fig-img" src="4.JPG" alt="Questions that need to be prompted for the required entities"></a><span class="caption">Questions that need to be prompted for the required entities</span></div></p>
-<h3 id="Response"><a href="#Response" class="headerlink" title="Response"></a>Response</h3><p>The reply that is sent to the user after you have satisfied all that you needed to know from the user’s intent.<br><div class="figure center fig-100" style="width:;"><a class="fancybox" href="5.JPG" title="The reply that the bot gives after your requirements are met" data-fancybox-group="travel"><img class="fig-img" src="5.JPG" alt="The reply that the bot gives after your requirements are met"></a><span class="caption">The reply that the bot gives after your requirements are met</span></div></p>
-<h2 id="Testing-our-work"><a href="#Testing-our-work" class="headerlink" title="Testing our work"></a>Testing our work</h2><div class="figure center fig-100" style="width:;"><a class="fancybox" href="7.gif" title="Testing with the panel on the right" data-fancybox-group="travel"><img class="fig-img" src="7.gif" alt="Testing with the panel on the right"></a><span class="caption">Testing with the panel on the right</span></div>
-<p>Where do we go from here…<br>If you dial into the options, you’ll find a ton of integrations with api.ai that will save you a lot of time and engage with users in a great collection of platforms.<br><div class="figure center fig-100" style="width:;"><a class="fancybox" href="8.png" title="Integrations" data-fancybox-group="travel"><img class="fig-img" src="8.png" alt="Integrations"></a><span class="caption">Integrations</span></div></p>
+            <p>In this age of evident progress, the need to follow the ceremony is fading away. As people start venturing into a realm where outcomes are more important than origins, we have been losing sight on what was meant to be and what has been achieved, while I’m venturing into the subject, let me be clear… I’m talking about programming.<br><a id="more"></a><br>Programming and the essence of making computers do stuff has been an essential start of an industry that has sprouted species of its own.  In those days, programming was a feat of its own. It felt like writing code was for the computer to understand easily. It was important for people to write efficient code. It is still important but fewer people are aware of it. </p>
+<p>Programming languages have gotten smarter as well. They now have great optimization techniques that let people write dumb code and yet produce efficient and fast results.</p>
+<p>I guess that next evolution of such a mentality was to write code using natural thought processes that people can understand with less or no extra documentation. </p>
+<p>That was the advent of languages such as Python brought onto the table. People felt distasteful at first but as they slowly realized, it’s important to understand what needs to be done to get the job done and spend less time thinking about the ceremony involved.</p>
+<p>JavaScript jumped into the bandwagon not so long ago and with updates to its ecosystem. The language has grown out to be a hero of clean, small smart and tacky language for old and new developers alike.</p>
+<p>People who have experience with programming in older programming language feel at home when they move to writing JavaScript. The newer generation feels less confounded by the fact that a programing language feels like a lot of work to understand.</p>
+<p>JavaScript like Python is weakly typed and feels quick and simple to use and make applications or simple utility programs. When you write code in JavaScript you feel at home as no ceremony is required to being. It feels great to prototype and fasts to implement. Building web applications feel right when done in JavaScript. </p>
+<p>When compared to behemoths like C# and Java.  The language is lite, portable and simple just convenient. It now has matured to having most sought after feature such as Object Oriented Programming Systems recently. It is also a first class functional programming model and lets you buy in a new perspective of how programming paradigms evolve while giving you the opportunity to taste both.</p>
 
             
         </div>
     </div>
     <div id="post-footer" class="post-footer main-content-wrap">
-        
-            <div class="post-footer-tags">
-                <span class="text-color-light text-small">TAGGED IN</span><br/>
-                
-    <a class="tag tag--primary tag--small t-link" href="/tags/AI/">AI</a> <a class="tag tag--primary tag--small t-link" href="/tags/api-ai/">api.ai</a> <a class="tag tag--primary tag--small t-link" href="/tags/bot/">bot</a> <a class="tag tag--primary tag--small t-link" href="/tags/machine-learning/">machine-learning</a>
-
-            </div>
         
         
             <div class="post-actions-wrap">
@@ -214,7 +184,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/08/26/the-javascript-paradigm/"  data-tooltip="The JavaScript paradigm">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -222,7 +192,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/08/22/hello-world/" data-tooltip="The habit of writing up thoughts">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/08/24/building-a-bot/" data-tooltip="Building a bot using api.ai">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right"></i>
@@ -240,7 +210,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://essuraj.github.io/2017/08/24/building-a-bot/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://essuraj.github.io/2017/08/26/the-javascript-paradigm/">
                     <i class="fa fa-facebook-official"></i>
                 </a>
             </li>
@@ -248,7 +218,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://essuraj.github.io/2017/08/24/building-a-bot/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://essuraj.github.io/2017/08/26/the-javascript-paradigm/">
                     <i class="fa fa-twitter"></i>
                 </a>
             </li>
@@ -256,7 +226,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://essuraj.github.io/2017/08/24/building-a-bot/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://essuraj.github.io/2017/08/26/the-javascript-paradigm/">
                     <i class="fa fa-google-plus"></i>
                 </a>
             </li>
@@ -306,7 +276,7 @@
         <ul class="post-actions post-action-nav">
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/08/26/the-javascript-paradigm/"  data-tooltip="The JavaScript paradigm">
+                    <a class="post-action-btn btn btn--disabled">
                 
                     <i class="fa fa-angle-left"></i>
                     <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
@@ -314,7 +284,7 @@
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/08/22/hello-world/" data-tooltip="The habit of writing up thoughts">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2017/08/24/building-a-bot/" data-tooltip="Building a bot using api.ai">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right"></i>
@@ -332,7 +302,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://essuraj.github.io/2017/08/24/building-a-bot/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://essuraj.github.io/2017/08/26/the-javascript-paradigm/">
                     <i class="fa fa-facebook-official"></i>
                 </a>
             </li>
@@ -340,7 +310,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://essuraj.github.io/2017/08/24/building-a-bot/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://essuraj.github.io/2017/08/26/the-javascript-paradigm/">
                     <i class="fa fa-twitter"></i>
                 </a>
             </li>
@@ -348,7 +318,7 @@
             
             
             <li class="post-action hide-xs">
-                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://essuraj.github.io/2017/08/24/building-a-bot/">
+                <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://essuraj.github.io/2017/08/26/the-javascript-paradigm/">
                     <i class="fa fa-google-plus"></i>
                 </a>
             </li>
@@ -379,7 +349,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://essuraj.github.io/2017/08/24/building-a-bot/">
+                <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://essuraj.github.io/2017/08/26/the-javascript-paradigm/">
                     <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
                 </a>
             </li>
@@ -387,7 +357,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://essuraj.github.io/2017/08/24/building-a-bot/">
+                <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://essuraj.github.io/2017/08/26/the-javascript-paradigm/">
                     <i class="fa fa-twitter"></i><span>Share on Twitter</span>
                 </a>
             </li>
@@ -395,7 +365,7 @@
             
             
             <li class="share-option">
-                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://essuraj.github.io/2017/08/24/building-a-bot/">
+                <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://essuraj.github.io/2017/08/26/the-javascript-paradigm/">
                     <i class="fa fa-google-plus"></i><span>Share on Google+</span>
                 </a>
             </li>
@@ -542,9 +512,9 @@
     
         <script>
              var disqus_config = function () {
-                 this.page.url = 'http://essuraj.github.io/2017/08/24/building-a-bot/';
+                 this.page.url = 'http://essuraj.github.io/2017/08/26/the-javascript-paradigm/';
                  
-                    this.page.identifier = '2017/08/24/building-a-bot/';
+                    this.page.identifier = '2017/08/26/the-javascript-paradigm/';
                  
              };
             (function() {
